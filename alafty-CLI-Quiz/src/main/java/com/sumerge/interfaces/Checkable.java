@@ -4,6 +4,8 @@ public interface Checkable {
 
     boolean checkAnswer(String proposedAnswer);
 
-    String toString();
+    String adminToString();
+
+    String playerToString();
     
 }

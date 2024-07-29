@@ -24,8 +24,8 @@ public abstract class User {
         latestScore++;
     }
 
-    public ArrayList<String> getLastestAnswers(){
-        return this.lastestAnswers;
+    public String getLastestAnswers(){
+        return this.lastestAnswers.toString();
     }
 
     public void updateLatestAnswers(String newAnswer) {

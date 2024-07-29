@@ -24,16 +24,20 @@ public class Question implements Checkable{
         return false;
     }
 
-    public String toString() {
+    public String playerToString() {
         String _possibleAnswers = "";
-        for(int i = 1; i <= possibleAnswers.size(); i++) {
-            _possibleAnswers += i + ") " + possibleAnswers.get(i) + "\n";
+        for(int i = 0; i < possibleAnswers.size(); i++) {
+            _possibleAnswers += i+1 + ") " + possibleAnswers.get(i) + "\n";
         }
         
         return 
         "The Question: " + questionText + "\n" +
-        "The Proposed Answers: " + "\n" + 
-        _possibleAnswers + 
+        _possibleAnswers + "\n";
+
+    }
+
+    public String adminToString() {
+        return playerToString() + 
         "The Correct Answer: " + "\n" +
         correctAnswer;
 
