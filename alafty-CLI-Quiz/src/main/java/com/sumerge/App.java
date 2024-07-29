@@ -259,21 +259,20 @@ public class App
             PlayerWorkFlow();
         }
        } catch (Exception e) { 
-        
-        System.out.print(e);
             System.out.println("Incorrect Input");
        }
        DotDotDot();
+       StartMenu();
     }
 
     static void DotDotDot() {
-        for(int i = 0; i < 3; i++) {
-            System.out.print(". ");
+        for(int i = 0; i < 3; i++) { 
             try {
-                Thread.sleep(1500);
+                Thread.sleep(1000);
             } catch (Exception e) {
                 System.out.println(e);
             }
+            System.out.print(". ");
         }
         System.out.println();
     }
