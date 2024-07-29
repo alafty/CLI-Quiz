@@ -36,7 +36,7 @@ public class Question implements Checkable{
 
     }
 
-    public String adminToString() {
+    public String toString() {
         return playerToString() + 
         "The Correct Answer: " + "\n" +
         correctAnswer;

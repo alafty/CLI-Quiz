@@ -9,7 +9,7 @@ public class Quiz {
     ArrayList<Checkable> questionPool = new ArrayList<Checkable>();
 
     public String DisplayQuestionForAdmin(int index) {
-        return questionPool.get(index).adminToString();
+        return questionPool.get(index).toString();
     }
 
     public String DisplayQuestionForPlayer(int index) {

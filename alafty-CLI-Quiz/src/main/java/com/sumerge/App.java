@@ -8,7 +8,6 @@ import com.sumerge.classes.Admin;
 import com.sumerge.classes.Player;
 import com.sumerge.classes.Quiz;
 import com.sumerge.classes.User;
-import com.sumerge.interfaces.Checkable;
 
 /**
  * Hello world!
